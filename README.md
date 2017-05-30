@@ -21,3 +21,8 @@ Nowhere yet. plz help
 - [Coding with Google Apps Script](http://www.benlcollins.com/spreadsheets/starting-gas/)
 - [How to work with the Google Sheets API](https://developers.google.com/sheets/)
 
+## Might be useful?
+- [ckan-tutorial by Nat](https://github.com/opentechinstitute/ckan-tutorial/blob/master/ckan-basics.js)
+- [another piece of that tutorial](https://github.com/opentechinstitute/ckan-tutorial/blob/master/ckan-tutorial.html)
+- [Python client for ProPublica Nonprofit Explorer API](https://github.com/robrem/propublica-nonprofit)
+
