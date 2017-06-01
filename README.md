@@ -16,6 +16,14 @@ If you have [a list of nonprofit organizations](https://docs.google.com/spreadsh
 ## Where is the project now?
 Nowhere yet. plz help
 
+## Contributing
+
+Thanks for your interest in contributing! To get started, take a look at [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Participation Guidelines
+
+This project adheres to a [code of conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to maya@opentechinstitute.org.
+
 ## Tutorials
 - [Useful code snippets for working with the ProPublica APIs](https://www.propublica.org/nerds/item/useful-gists)
 - [Coding with Google Apps Script](http://www.benlcollins.com/spreadsheets/starting-gas/)
@@ -25,4 +33,10 @@ Nowhere yet. plz help
 - [ckan-tutorial by Nat](https://github.com/opentechinstitute/ckan-tutorial/blob/master/ckan-basics.js)
 - [another piece of that tutorial](https://github.com/opentechinstitute/ckan-tutorial/blob/master/ckan-tutorial.html)
 - [Python client for ProPublica Nonprofit Explorer API](https://github.com/robrem/propublica-nonprofit)
+
+## MozSprint
+
+Join us at the [Mozilla Global Sprint](http://mozilla.github.io/global-sprint/) June 1-2, 2017! We'll be gathering in-person at sites around the world and online to collaborate on this project and learn from each other. [Get your #mozsprint tickets now](http://mozilla.github.io/global-sprint/)!
+
+![Global Sprint](https://cloud.githubusercontent.com/assets/617994/24632585/b2b07dcc-1892-11e7-91cf-f9e473187cf7.png)
 

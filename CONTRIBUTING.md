@@ -8,7 +8,7 @@ These are some guidelines on how you can help.
 
 ## Participation guidelines
 
-This project adheres to a [code of conduct](CODE_OF_CONDUCT.md). Don't be garbage, and don't bring your macho geek bro vibes in here. No one needs that, and no one wants that. Treat everyone with respect. Please report unacceptable behavior to mayawagon@gmail.com, and she will try to respectfully handle the situation.
+This project adheres to a [code of conduct](CODE_OF_CONDUCT.md). Don't be garbage, and don't bring your macho geek bro vibes in here. No one needs that, and no one wants that. Treat everyone with respect. Please report unacceptable behavior to maya@opentechinstitute.org, and she will try to respectfully handle the situation.
 
 ## What we're working on
 
@@ -36,4 +36,4 @@ Notice a mistake? Please file any bugs, requests, or questions in our [issue tra
 
 ## Communication channels
 
-We should have one, right? This will be updated when I get to the Moz Sprint site in Worcester, but in the meantime, email mayawagon@gmail.com to get in contact. 
+We should have one, right? This will be updated when I get to the Moz Sprint site in Worcester, but in the meantime, email maya@opentechinstitute.org to get in contact. 
