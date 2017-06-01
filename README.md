@@ -14,7 +14,7 @@ Nonprofit corporations in the United States have to submit one of a few types of
 If you have [a list of nonprofit organizations](https://docs.google.com/spreadsheets/d/1jwM-cYI1Ep9ZjNxGDjJXjqNkYA-f1ViyAH-Bv1tLvV4/edit#gid=0), this will loop through that list, use the API's Search Method to find an org's EIN number, and then use the EIN number and the Organization Method to find out whatever else you want to find out (e.g. total revenues, location, number of volunteers, etc). It then gently places all of that info into your Google Spreadsheet. 
 
 ## Where is the project now?
-Nowhere yet. plz help
+Check the [Gitter chatroom](https://gitter.im/990-scraper/Lobby#)for the most up-to-date project information!
 
 ## Contributing
 
