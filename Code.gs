@@ -1,46 +1,39 @@
-//this function looks up data for a given EIN using the propublica API and return it as a json object
-function lookUpEIN (ein) {
-  var query = 'https://projects.propublica.org/nonprofits/api/v2/organizations/' + ein + '.json';
-  var response = UrlFetchApp.fetch(query); sheet.insertColumnAfter(1);
+/* 
+ * This project was created June 1, 2017 during Mozilla's Global Sprint by: 
+ * (add your name if you worked on this):
+ *   + Drew Wilson
+ *   +
+ *  It uses the propublica API for nonprofit tax filings to populate a google sheet with
+ *  data about financial stuff and other stuff for a nonprofit with a given EIN.
+ * 
+ */ 
 
-  var ss = SpreadsheetApp.getActiveSpreadsheet();
-  var sheet = ss.getSheets()[0];
-  var currentCol = 1;//replace with function to get current active range
-  sheet.insertColumnAfter(currentCol);
+
+/* 
+ * this function looks up data for a given EIN using the propublica API and returns
+ * the certain data fields back: name, totrevenue, pdf_url, city, state, ntee_code
+ * 
+ */
+function lookUpByEIN (ein) {
+  var ss = SpreadsheetApp.getActiveSpreadsheet(),
+      sheets = ss.getSheets(),
+      sheet = ss.getActiveSheet();
   
-  return response.getContentText();
-}
-
-
-//this function takes an array of EIN's and looks up each of their data and returns an array with all of their data
-function putEINDataInSpreadsheet () {
+  var query = 'https://projects.propublica.org/nonprofits/api/v2/organizations/' + ein + '.json'; //build the query text
+  var response = UrlFetchApp.fetch(query), //do the query
+      data = JSON.parse(response.getContentText()); //convert the query response to json
   
+  var rows = []; //start building the rows to return
+  
+  rows.push([data.organization.name, data.organization.address,data.organization.city]); //the data fields that we want from the query response
+
+  return rows; //return the data as rows, so they go into new columns in the spreadsheet
+
 }
 
-function testLookUpEIN () {
-  //this function is for testing lookUpEIN() 
-  var ein = '142007220';
-  var result = getEINdata(ein);
-    Logger.log(result);//output to the console
-}
-
-function doTest() {
-  SpreadsheetApp.getActiveSheet().getRange('C3').setValue('Hello');
-}
-
-//Sidebar
-
-function onOpen() {
-  SpreadsheetApp.getUi() // Or DocumentApp or FormApp.
-      .createMenu('990 Scraper')
-      .addItem('Show sidebar', 'showSidebar')
-      .addToUi();
-}
-
-function showSidebar() {
-  var html = HtmlService.createHtmlOutputFromFile('page')
-      .setTitle('990 Scraper')
-      .setWidth(300);
-  SpreadsheetApp.getUi() // Or DocumentApp or FormApp.
-      .showSidebar(html);
+//this is an internal testing function for the lookUpByEIN() function
+function testLookUpByEIN () {
+  var ein = '142007220';//hardcoded EIN for propublica
+  var result = lookUpByEIN(ein);
+  Logger.log(result);//output to the console
 }
