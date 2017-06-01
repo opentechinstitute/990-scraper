@@ -23,7 +23,7 @@ Want to quickly test it out? We'll be creating a Google Add-on soon, but for now
 4. Go to File > New > Html file
 5. Copy in [sidebar.html](https://github.com/opentechinstitute/990-scraper/blob/master/sidebar.html)
 6. Press the play button and accept all the permissions
-7. Go back to your original spreadsheet, refresh the page and click the menu item 990 Scraper > Show Sidebar (currently looks pretty but does nothing)
+7. Go back to your original spreadsheet, and refresh the page
 7. Enter an EIN number into a cell (lets say the EIN number is 142007220 and the cell is A1), go to another  cell and enter =lookUpByEIN(A1)
 8. Press enter, and you have information on that nonprofit!
 
