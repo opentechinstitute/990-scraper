@@ -1,8 +1,8 @@
 # 990-scraper
-Grab U.S. nonprofit tax information from the [ProPublica Nonprofit Explorer API](https://projects.propublica.org/nonprofits/api) and put it in a Google spreadsheet!
+An add-on to grab whatever U.S. nonprofit tax information you want from the [ProPublica Nonprofit Explorer API](https://projects.propublica.org/nonprofits/api) and put it in a Google spreadsheet!
 
-## What's in a 990?
-Nonprofit corporations in the United States have to submit one of a few types of tax forms to the IRS each year, which are then made public. If their total revenue is over $200,000 in a year, they submit a [form 990](https://www.irs.gov/pub/irs-pdf/f990.pdf), if it is between $50,000 and $199,999, they submit a [form 990-ez](https://www.irs.gov/pub/irs-pdf/f990ez.pdf), and if it is under $50,000, they submit a [990-N (e-postcard)](https://www.irs.gov/charities-non-profits/annual-electronic-notice-form-990-n-for-small-organizations-what-to-report). The information obtained from these forms from 2011-2014 is what has been made available through the ProPublica Nonprofit Explorer API. From this, we can learn:
+## What's a 990?
+Nonprofit corporations in the United States have to submit one of a few types of tax forms to the IRS each year, which are then made public. If their total revenue is over $200,000 in a year, they submit a [form 990](https://www.irs.gov/pub/irs-pdf/f990.pdf), if it is between $50,000 and $199,999, they submit a [form 990-ez](https://www.irs.gov/pub/irs-pdf/f990ez.pdf), and if it is under $50,000, they submit a [990-N (e-postcard)](https://www.irs.gov/charities-non-profits/annual-electronic-notice-form-990-n-for-small-organizations-what-to-report). The information obtained from these forms from 2011-2014 is what has been made available through the ProPublica Nonprofit Explorer API. From this, we might be able to learn:
 - Total number of individuals employed
 - Total number of employees
 - Amount of contributions and grants
@@ -15,6 +15,17 @@ If you have [a list of nonprofit organizations](https://docs.google.com/spreadsh
 
 ## Where is the project now?
 Check the [Gitter chatroom](https://gitter.im/990-scraper/Lobby#)for the most up-to-date project information!
+
+Want to quickly test it out? We'll be creating a Google Add-on soon, but for now:
+1. Open a blank Google Spreadsheet
+2. Click on the menu item "Tools" > "Script editor..." This will open up another window for editing your own custom scripts. 
+3. Copy [Code.gs](https://github.com/opentechinstitute/990-scraper/blob/master/Code.gs) into the box you see before you.
+4. Go to File > New > Html file
+5. Copy in [sidebar.html](https://github.com/opentechinstitute/990-scraper/blob/master/sidebar.html)
+6. Press the play button and accept all the permissions
+7. Go back to your original spreadsheet, refresh the page and click the menu item 990 Scraper > Show Sidebar (currently looks pretty but does nothing)
+7. Enter an EIN number into a cell (lets say the EIN number is 142007220 and the cell is A1), go to another  cell and enter =lookUpByEIN(A1)
+8. Press enter, and you have information on that nonprofit!
 
 ## Contributing
 
