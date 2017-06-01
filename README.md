@@ -18,7 +18,7 @@ Nowhere yet. plz help
 
 ## Contributing
 
-Thanks for your interest in contributing! To get started, take a look at [CONTRIBUTING.md](CONTRIBUTING.md).
+Thanks for your interest in contributing! To get started, take a look at [CONTRIBUTING.md](CONTRIBUTING.md), and join [the chatroom on Gitter](https://gitter.im/990-scraper/Lobby#).
 
 ## Participation Guidelines
 
