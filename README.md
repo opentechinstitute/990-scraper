@@ -21,7 +21,7 @@ Want to quickly test it out? We'll be creating a Google Add-on soon, but for now
 2. Click on the menu item "Tools" > "Script editor..." This will open up another window for editing your own custom scripts. 
 3. Copy [Code.gs](https://github.com/opentechinstitute/990-scraper/blob/master/Code.gs) into the box you see before you.
 4. Go to File > New > Html file
-5. Copy in [sidebar.html](https://github.com/opentechinstitute/990-scraper/blob/master/sidebar.html)
+5. Copy in [dialog.html](https://github.com/opentechinstitute/990-scraper/blob/master/dialog.html)
 6. Press the play button and accept all the permissions
 7. Go back to your original spreadsheet, and refresh the page
 7. Enter an EIN number into a cell (lets say the EIN number is 142007220 and the cell is A1), go to another  cell and enter =lookUpByEIN(A1)
